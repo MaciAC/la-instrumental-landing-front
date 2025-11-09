@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 export const submitAdhesion = async (formData) => {
   try {
-    const response = await apiClient.post('/adhesions', {
+    const response = await apiClient.post('/v1/adhesions', {
       name: formData.name,
       email: formData.email,
     });
