@@ -1,0 +1,39 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app {
+    font-size: 16px;
+  }
+  
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}

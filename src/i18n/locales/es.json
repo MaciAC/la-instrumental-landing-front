@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "manifest": "Manifiesto",
+    "roadmap": "Hoja de ruta",
+    "adhesion": "Adhesiones"
+  },
+  "hero": {
+    "title": "La instrumental",
+    "subtitle": "para imaginar futuros mas libres y colectivos para la música; para defender la dignidad y el compromiso de nuestras profesiones."
+  },
+  "manifest": {
+    "section_title": "Manifiesto",
+    "loading": "Cargando manifiesto...",
+    "error": "Error cargando el manifiesto"
+  },
+  "roadmap": {
+    "section_title": "Hoja de Ruta",
+    "loading": "Cargando ruta...",
+    "error": "Error cargando la ruta",
+    "milestone_at": "Hito en"
+  },
+  "adhesion": {
+    "section_title": "Adhesión al manifiesto",
+    "form_title": "Formulario de adhesión",
+    "name": "Nombre",
+    "first_name": "Nombre",
+    "last_name": "Apellidos",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "organization": "Organización",
+    "message": "Mensaje",
+    "accept_terms": "Acepto los términos y condiciones",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Gracias por tu adhesión!",
+    "error": "Error enviando el formulario",
+    "required_fields": "Por favor, completa todos los campos requeridos"
+  },
+  "footer": {
+    "copyright": "© 2025 La instrumental. Todos los derechos reservados."
+  }
+}

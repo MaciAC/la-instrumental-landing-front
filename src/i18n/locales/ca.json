@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Inici",
+    "manifest": "Manifest",
+    "roadmap": "Full de ruta",
+    "adhesion": "Adhesions"
+  },
+  "hero": {
+    "title": "La instrumental",
+    "subtitle": "per imaginar futurs més lliures i col·lectius per la música; per defensar la dignitat i el compromís de les nostres professions."
+  },
+  "manifest": {
+    "section_title": "Manifest",
+    "loading": "Carregant manifest...",
+    "error": "Error carregant el manifest"
+  },
+  "roadmap": {
+    "section_title": "Full de ruta",
+    "loading": "Carregant full de ruta...",
+    "error": "Error carregant el full de ruta",
+    "milestone_at": "Fita a"
+  },
+  "adhesion": {
+    "section_title": "Adhesió al manifest",
+    "form_title": "Formulari d'adhesió",
+    "name": "Nom",
+    "first_name": "Nom",
+    "last_name": "Cognoms",
+    "email": "Correu electrònic",
+    "phone": "Telèfon",
+    "organization": "Organització",
+    "message": "Missatge",
+    "accept_terms": "Accepto els términs i condicions",
+    "submit": "Enviar",
+    "submitting": "Enviant...",
+    "success": "Gràcies per la teva adhesió!",
+    "error": "Error enviant el formulari",
+    "required_fields": "Si us plau, completa tots els camps requerits"
+  },
+  "footer": {
+    "copyright": "© 2025 La instrumental. Tots els drets reservats."
+  }
+}
