@@ -43,7 +43,7 @@
 				<nav class="nav">
 					<a href="#manifest">{$t('nav.manifest')}</a>
 					<a href="#roadmap">{$t('nav.roadmap')}</a>
-					<a href="#adhesion">{$t('nav.adhesion')}</a>
+					<a href="#manifest-adhesion">{$t('nav.adhesion')}</a>
 				</nav>
 				<div class="lang-selector">
 					<button
@@ -80,7 +80,7 @@
 		<nav class="mobile-menu">
 			<a href="#manifest" on:click={closeMenu}>{$t('nav.manifest')}</a>
 			<a href="#roadmap" on:click={closeMenu}>{$t('nav.roadmap')}</a>
-			<a href="#adhesion" on:click={closeMenu}>{$t('nav.adhesion')}</a>
+			<a href="#manifest-adhesion" on:click={closeMenu}>{$t('nav.adhesion')}</a>
 			<div class="mobile-lang-selector">
 				<button
 					class={`lang-option ${$language === 'ca' ? 'active' : ''}`}

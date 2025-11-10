@@ -45,7 +45,7 @@
 	};
 </script>
 
-<section id="adhesion" class="content-section">
+<section id="manifest-adhesion" class="content-section">
 	<div class="container">
 		<span style="display: none;">{$language}</span>
 		<h2>{$t('adhesion.section_title')}</h2>
