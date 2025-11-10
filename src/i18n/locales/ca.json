@@ -12,13 +12,53 @@
   "manifest": {
     "section_title": "Manifest",
     "loading": "Carregant manifest...",
-    "error": "Error carregant el manifest"
+    "error": "Error carregant el manifest",
+    "title": "Manifest per a la música lliure i col·lectiva",
+    "content": "En un context on la música es cada vegada més subordinada als interessos econòmics, volem propugnar un model alternatiu que posseeixi la dignitat i el compromís amb la professió musical.",
+    "principles": [
+      {
+        "title": "Llibertat",
+        "description": "Defensar la llibertat creativa i la independència artística dels músics i musiciens."
+      },
+      {
+        "title": "Col·lectivitat",
+        "description": "Fomentar la col·laboració i la solidaritat entre els professionals de la música."
+      },
+      {
+        "title": "Dignitat",
+        "description": "Garantir condicions de treball justes i dignes per a tots els músics i musiciens."
+      }
+    ]
   },
   "roadmap": {
     "section_title": "Full de ruta",
     "loading": "Carregant full de ruta...",
     "error": "Error carregant el full de ruta",
-    "milestone_at": "Fita a"
+    "milestone_at": "Fita a",
+    "title": "Full de ruta",
+    "description": "El nostre pla d'acció per a la consolidació del projecte:",
+    "milestones": [
+      {
+        "title": "Consolidació de la comunitat",
+        "date": "Q1 2025",
+        "description": "Construir una comunitat forta de músics i musiciens comprometits amb els principis del manifest."
+      },
+      {
+        "title": "Desenvolupament de recursos",
+        "date": "Q2 2025",
+        "description": "Crear recursos i eines per a facilitar la col·laboració i la compartició de coneixement."
+      },
+      {
+        "title": "Xarxa d'aliances",
+        "date": "Q3 2025",
+        "description": "Establir aliances amb altres organitzacions i iniciatives alineades amb els nostres valors."
+      },
+      {
+        "title": "Sostenibilitat econòmica",
+        "date": "Q4 2025",
+        "description": "Desenvolupar models sostenibles per a finançar i mantenir el projecte a llarg termini."
+      }
+    ]
   },
   "adhesion": {
     "section_title": "Adhesió al manifest",

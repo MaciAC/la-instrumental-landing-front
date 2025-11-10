@@ -25,7 +25,7 @@
   padding: 0.4rem 0;
 }
 
-.header.scrolled .site-title {
+.header.scrolled .site-title-btn .site-title {
   font-size: 1.1rem;
 }
 
@@ -37,6 +37,25 @@
   width: 100%;
 }
 
+.site-title-btn {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-shrink: 0;
+  cursor: default;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.site-title-btn:hover,
+.site-title-btn:active,
+.site-title-btn:focus {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .site-title {
   font-size: 1.3rem;
   font-weight: 900;
@@ -45,18 +64,17 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  transition: font-size 0.3s ease-out, opacity 0.2s ease-out;
+  transition: font-size 0.3s ease-out;
   white-space: nowrap;
-  flex-shrink: 0;
-  cursor: pointer;
+  background: transparent;
+  color: #1a1a1a !important;
+  pointer-events: none;
 }
 
-.site-title:hover {
-  opacity: 0.7;
-}
-
-.site-title:active {
-  opacity: 0.5;
+.site-title-btn:hover .site-title,
+.site-title-btn:active .site-title,
+.site-title-btn:focus .site-title {
+  color: #1a1a1a !important;
 }
 
 /* Desktop Layout */
@@ -133,15 +151,16 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
   width: 44px;
   height: 44px;
-  position: relative;
+  position: absolute;
+  padding-bottom: 18px;
   z-index: 100;
   align-items: center;
   justify-content: center;
   color: #1a1a1a;
   flex-shrink: 0;
+  font-size: 1.5rem;
 }
 
 .hamburger:hover {
@@ -157,11 +176,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-top: 2px solid #1a1a1a;
   background-color: #cbcbcb;
   position: relative;
   z-index: 99;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .mobile-menu a {
@@ -218,7 +239,7 @@
     font-size: 1rem;
   }
 
-  .header.scrolled .site-title {
+  .header.scrolled .site-title-btn .site-title {
     font-size: 0.85rem;
   }
 
@@ -233,7 +254,7 @@
   }
 
   .mobile-menu {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .mobile-menu a {

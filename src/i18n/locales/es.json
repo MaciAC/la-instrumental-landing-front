@@ -12,13 +12,57 @@
   "manifest": {
     "section_title": "Manifiesto",
     "loading": "Cargando manifiesto...",
-    "error": "Error cargando el manifiesto"
+    "error": "Error cargando el manifiesto",
+    "title": "Manifiesto para la música libre y colectiva",
+    "content": "En un contexto donde la música está cada vez más subordinada a los intereses económicos, queremos propugnar un modelo alternativo que posea la dignidad y el compromiso con la profesión musical.",
+    "principles": [
+      {
+        "title": "Libertad",
+        "description": "Defender la libertad creativa e independencia artística de los músicos y musicientas."
+      },
+      {
+        "title": "Colectividad",
+        "description": "Fomentar la colaboración y la solidaridad entre los profesionales de la música."
+      },
+      {
+        "title": "Dignidad",
+        "description": "Garantizar condiciones de trabajo justas y dignas para todos los músicos y musicientas."
+      },
+      {
+        "title": "Transparencia",
+        "description": "Promover la transparencia y la responsabilidad en las decisiones tomadas por los músicos y musicientas."
+      }
+    ]
   },
   "roadmap": {
     "section_title": "Hoja de Ruta",
     "loading": "Cargando ruta...",
     "error": "Error cargando la ruta",
-    "milestone_at": "Hito en"
+    "milestone_at": "Hito en",
+    "title": "Hoja de ruta",
+    "description": "Nuestro plan de acción para la consolidación del proyecto:",
+    "milestones": [
+      {
+        "title": "Consolidación de la comunidad",
+        "date": "Q1 2025",
+        "description": "Construir una comunidad fuerte de músicos y musicientas comprometidos con los principios del manifiesto."
+      },
+      {
+        "title": "Desarrollo de recursos",
+        "date": "Q2 2025",
+        "description": "Crear recursos y herramientas para facilitar la colaboración y la compartición de conocimiento."
+      },
+      {
+        "title": "Red de alianzas",
+        "date": "Q3 2025",
+        "description": "Establecer alianzas con otras organizaciones e iniciativas alineadas con nuestros valores."
+      },
+      {
+        "title": "Sostenibilidad económica",
+        "date": "Q4 2025",
+        "description": "Desarrollar modelos sostenibles para financiar y mantener el proyecto a largo plazo."
+      }
+    ]
   },
   "adhesion": {
     "section_title": "Adhesión al manifiesto",
