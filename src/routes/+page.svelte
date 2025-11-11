@@ -40,7 +40,7 @@
 
 	.coming-soon {
 		text-align: center;
-		font-family: Arial, sans-serif;
+		font-family: 'Inter', sans-serif;
 	}
 
 	.coming-soon h1 {

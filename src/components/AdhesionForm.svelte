@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { submitAdhesion } from '../api/apiClient';
+	import type { AdhesionFormData } from '../api/apiClient';
+	import { get } from 'svelte/store';
 	import { t, language } from '../stores/i18n';
 	import './AdhesionForm.css';
 
-	let formData = {
+	let formData: AdhesionFormData = {
 		name: '',
 		email: '',
 	};
@@ -13,15 +15,16 @@
 
 	const handleChange = (e: Event) => {
 		const target = e.target as HTMLInputElement;
-		const { name, value, type, checked } = target;
-		formData[name as keyof typeof formData] = type === 'checkbox' ? checked : value;
+		const field = target.name as keyof AdhesionFormData;
+		formData = { ...formData, [field]: target.value };
 	};
 
 	const handleSubmit = async (e: Event) => {
 		e.preventDefault();
+		const translate = get(t);
 
 		if (!formData.name || !formData.email) {
-			error = t('adhesion.required_fields');
+			error = translate('adhesion.required_fields');
 			return;
 		}
 
@@ -38,7 +41,7 @@
 				success = false;
 			}, 5000);
 		} catch (err) {
-			error = t('adhesion.error');
+			error = translate('adhesion.error');
 		} finally {
 			loading = false;
 		}

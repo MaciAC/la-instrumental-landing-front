@@ -10,9 +10,10 @@
 }
 
 .form-title {
+  font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
   margin: 2.5rem 0 2rem 0;
   border: none;
   padding: 0;

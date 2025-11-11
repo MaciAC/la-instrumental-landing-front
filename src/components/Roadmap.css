@@ -76,9 +76,10 @@
 }
 
 .milestone-content h4 {
+  font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
   margin: 0 0 0.75rem 0;
   border: none;
   padding: 0;
