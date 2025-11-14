@@ -141,6 +141,7 @@
 }
 
 .lang-separator {
+  padding-top: 5%;
   font-weight: 400;
   margin: 0 0.3rem;
   align-self: center;
