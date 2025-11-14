@@ -11,6 +11,7 @@ i18n
       es: { translation: es },
     },
     fallbackLng: 'ca',
+    supportedLngs: ['ca', 'es'],
     interpolation: {
       escapeValue: false,
     },

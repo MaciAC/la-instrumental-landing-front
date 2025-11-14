@@ -14,7 +14,7 @@
     "loading": "Carregant manifest...",
     "error": "Error carregant el manifest",
     "title": "Manifest per a la música lliure i col·lectiva",
-    "content": "En un context on la música es cada vegada més subordinada als interessos econòmics, volem propugnar un model alternatiu que posseeixi la dignitat i el compromís amb la professió musical.",
+    "contentFile": "manifest",
     "principles": [
       {
         "title": "Llibertat",

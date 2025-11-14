@@ -2,7 +2,7 @@
 	import Header from '../../components/Header.svelte';
 	import Hero from '../../components/Hero.svelte';
 	import Manifest from '../../components/Manifest.svelte';
-	import Roadmap from '../../components/Roadmap.svelte';
+	// import Roadmap from '../../components/Roadmap.svelte';
 	import AdhesionForm from '../../components/AdhesionForm.svelte';
 	import Footer from '../../components/Footer.svelte';
 </script>
@@ -12,7 +12,7 @@
 	<main>
 		<Hero />
 		<Manifest />
-		<Roadmap />
+		<!-- <Roadmap /> -->
 		<AdhesionForm />
 	</main>
 	<Footer />

@@ -42,7 +42,7 @@
 			<div class="header-desktop">
 				<nav class="nav">
 					<a href="#manifest">{$t('nav.manifest')}</a>
-					<a href="#roadmap">{$t('nav.roadmap')}</a>
+					<!-- <a href="#roadmap">{$t('nav.roadmap')}</a> -->
 					<a href="#manifest-adhesion">{$t('nav.adhesion')}</a>
 				</nav>
 				<div class="lang-selector">
