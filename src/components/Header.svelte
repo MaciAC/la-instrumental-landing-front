@@ -33,6 +33,10 @@
 <header class={`header ${isScrolled ? 'scrolled' : ''}`}>
 	<div class="container">
 		<div class="header-content">
+			<div class="logo-left desktop-only">
+				<img src="/images/logo.png" alt="Logo" height="30" />
+			</div>
+
 			<button class="site-title-btn" on:click={scrollToTop} aria-label="Scroll to top">
 				<h1 class="site-title">
 					{siteName}
@@ -60,6 +64,13 @@
 					>
 						ES
 					</button>
+				</div>
+
+				<div class="logo-right">
+					<img src="/images/logo.png" alt="Logo" height="30" />
+				</div>
+				<div class="logo-mobile mobile-only">
+					<img src="/images/logo.png" alt="Logo" height="30" />
 				</div>
 			</div>
 

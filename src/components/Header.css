@@ -147,6 +147,28 @@
   align-self: center;
 }
 
+.logo-left,
+.logo-right,
+.logo-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-left img,
+.logo-right img,
+.logo-mobile img {
+  display: block;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -232,6 +254,14 @@
 
   .header.scrolled .site-title {
     font-size: 4.5rem;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
   }
 }
 

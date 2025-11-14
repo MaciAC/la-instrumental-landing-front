@@ -9,7 +9,7 @@
 	<div class="container">
 		<span style="display: none;">{$language}</span>
 		<p>
-			{$t('footer.copyright')} © {siteName}
+			{$t('footer.text')}
 		</p>
 	</div>
 </footer>
