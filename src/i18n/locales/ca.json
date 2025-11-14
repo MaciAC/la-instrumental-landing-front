@@ -16,19 +16,35 @@
     "title": "Manifest per a la música lliure i col·lectiva",
     "contentFile": "manifest",
     "principles": [
-      {
-        "title": "Llibertat",
-        "description": "Defensar la llibertat creativa i la independència artística dels músics i musiciens."
-      },
-      {
-        "title": "Col·lectivitat",
-        "description": "Fomentar la col·laboració i la solidaritat entre els professionals de la música."
-      },
-      {
-        "title": "Dignitat",
-        "description": "Garantir condicions de treball justes i dignes per a tots els músics i musiciens."
-      }
-    ]
+    {
+      "title": "Col·lectivitat",
+      "description": "Creiem en la força de l’organització conjunta per transformar el sistema musical. Les accions individuals no són suficients; cal cooperar i construir plegades."
+    },
+    {
+      "title": "Justícia i anticapitalisme",
+      "description": "Rebutgem el model neoliberal de les plataformes de streaming i qualsevol estructura que exploti artistes o sustenti la violència estructural i el colonialisme."
+    },
+    {
+      "title": "Autogestió i sobirania digital",
+      "description": "Necessitem eines culturals dissenyades i controlades per les pròpies artistes, lliures d'inversors i interessos empresarials."
+    },
+    {
+      "title": "Imaginació radical",
+      "description": "Cultivem una visió constructiva i transformadora del món cultural. Ens preguntem quin futur volem i treballem col·lectivament per fer-lo possible."
+    },
+    {
+      "title": "Dignitat i sostenibilitat",
+      "description": "Defensem una retribució justa, condicions laborals dignes i la possibilitat de sostenir projectes musicals sense precarietat ni explotació."
+    },
+    {
+      "title": "Solidaritat i compromís social",
+      "description": "La música és una eina per denunciar la injustícia i construir nous imaginaris culturals. Ens posicionem contra els genocidis i tota forma d’opressió."
+    },
+    {
+      "title": "Diàleg i comunitat",
+      "description": "Volem espais de trobada entre artistes, públic, tècniques i segells per pensar col·lectivament el futur de la música i la cultura digital."
+    }
+  ]
   },
   "roadmap": {
     "section_title": "Full de ruta",

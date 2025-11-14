@@ -17,20 +17,32 @@
     "contentFile": "manifest",
     "principles": [
       {
-        "title": "Libertad",
-        "description": "Defender la libertad creativa e independencia artística de los músicos y musicientas."
-      },
-      {
         "title": "Colectividad",
-        "description": "Fomentar la colaboración y la solidaridad entre los profesionales de la música."
+        "description": "Creemos en la fuerza de la organización conjunta para transformar el sistema musical. Las acciones individuales no bastan; hay que cooperar y construir juntas."
       },
       {
-        "title": "Dignidad",
-        "description": "Garantizar condiciones de trabajo justas y dignas para todos los músicos y musicientas."
+        "title": "Justicia y anticapitalismo",
+        "description": "Rechazamos el modelo neoliberal de las plataformas de streaming y cualquier estructura que explote a las artistas o sostenga la violencia estructural y el colonialismo."
       },
       {
-        "title": "Transparencia",
-        "description": "Promover la transparencia y la responsabilidad en las decisiones tomadas por los músicos y musicientas."
+        "title": "Autogestión y soberanía digital",
+        "description": "Necesitamos herramientas culturales diseñadas y controladas por las propias artistas, libres de inversores e intereses empresariales."
+      },
+      {
+        "title": "Imaginación radical",
+        "description": "Cultivamos una visión constructiva y transformadora del mundo cultural. Nos preguntamos qué futuro queremos y trabajamos colectivamente para hacerlo posible."
+      },
+      {
+        "title": "Dignidad y sostenibilidad",
+        "description": "Defendemos una retribución justa, condiciones laborales dignas y la posibilidad de sostener proyectos musicales sin precariedad ni explotación."
+      },
+      {
+        "title": "Solidaridad y compromiso social",
+        "description": "La música es una herramienta para denunciar la injusticia y construir nuevos imaginarios culturales. Nos posicionamos contra los genocidios y toda forma de opresión."
+      },
+      {
+        "title": "Diálogo y comunidad",
+        "description": "Queremos espacios de encuentro entre artistas, público, técnicas y sellos para pensar colectivamente el futuro de la música y la cultura digital."
       }
     ]
   },

@@ -79,7 +79,7 @@
 	{#if isMenuOpen}
 		<nav class="mobile-menu">
 			<a href="#manifest" on:click={closeMenu}>{$t('nav.manifest')}</a>
-			<a href="#roadmap" on:click={closeMenu}>{$t('nav.roadmap')}</a>
+			<!-- <a href="#roadmap" on:click={closeMenu}>{$t('nav.roadmap')}</a> -->
 			<a href="#manifest-adhesion" on:click={closeMenu}>{$t('nav.adhesion')}</a>
 			<div class="mobile-lang-selector">
 				<button
