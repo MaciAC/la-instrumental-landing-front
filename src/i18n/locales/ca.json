@@ -56,42 +56,21 @@
     "place_label": "Lloc",
     "events": [
       {
-        "title": "Comunitzar la música",
+        "title": "Comunitzar la música Vol VI",
         "day": "29 de novembre de 2025",
         "hour": "16:00 h",
-        "place": "Centre Cultural La Caldera, Barcelona",
-        "description": "Primera trobada de La Instrumental per a presentar el manifest i obrir el debat sobre el futur de la música col·lectiva.",
+        "place": "Bloc4BCN, Carrer de la Constitució, 19, 08014 Barcelona",
+        "description": "Primera trobada de La Instrumental en col·laboració amb Acció Cultura Viva i la Causa Sonora per dinamitzar una taula de debat entorn a les plataformes de streaming.",
         "links": [
           {
             "label": "Més informació",
-            "url": "https://example.com/trobada1"
+            "url": "https://lacausasonora.cat/comunitzar-la-musica-vol-vi/"
           },
           {
-            "label": "Registre",
-            "url": "https://example.com/register1"
+            "label": "Inscripcions",
+            "url": "https://lacausasonora.cat/comunitzar-la-musica-vol-vi/#inscripcions"
           }
         ]
-      },
-      {
-        "title": "Debat sobre sobirania digital",
-        "day": "29 de novembre de 2025",
-        "hour": "18:30 h",
-        "place": "Espai Cooperatiu, Barcelona",
-        "description": "Debat obert sobre les eines i plataformes per a la distribució d'música independents.",
-        "links": [
-          {
-            "label": "Més informació",
-            "url": "https://example.com/trobada2"
-          }
-        ]
-      },
-      {
-        "title": "Roda de premsa",
-        "day": "13 de desembre de 2025",
-        "hour": "17:00 h",
-        "place": "Sala de premsa, Barcelona",
-        "description": "Presentació de resultats i conclusions de les trobades anteriors.",
-        "links": []
       }
     ]
   },

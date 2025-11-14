@@ -56,42 +56,21 @@
     "place_label": "Lugar",
     "events": [
       {
-        "title": "Encuentro de apertura",
-        "day": "15 de noviembre de 2025",
-        "hour": "19:00 h",
-        "place": "Centro Cultural La Caldera, Barcelona",
+        "title": "Comunitzar la música Vol VI",
+        "day": "29 de noviembre de 2025",
+        "hour": "16:00 h",
+        "place": "Bloc4BCN, Calle de la Constitució, 19, 08014 Barcelona",
         "description": "Primer encuentro de La Instrumental para presentar el manifiesto y abrir el debate sobre el futuro de la música colectiva.",
         "links": [
           {
-            "label": "Más información",
-            "url": "https://example.com/encuentro1"
+            "label": "Mas información",
+            "url": "https://lacausasonora.cat/comunitzar-la-musica-vol-vi/"
           },
           {
-            "label": "Registro",
-            "url": "https://example.com/register1"
+            "label": "Inscripciones",
+            "url": "https://lacausasonora.cat/comunitzar-la-musica-vol-vi/#inscripcions"
           }
         ]
-      },
-      {
-        "title": "Debate sobre soberanía digital",
-        "day": "29 de noviembre de 2025",
-        "hour": "18:30 h",
-        "place": "Espacio Cooperativo, Barcelona",
-        "description": "Debate abierto sobre las herramientas y plataformas para la distribución de música independiente.",
-        "links": [
-          {
-            "label": "Más información",
-            "url": "https://example.com/encuentro2"
-          }
-        ]
-      },
-      {
-        "title": "Rueda de prensa",
-        "day": "13 de diciembre de 2025",
-        "hour": "17:00 h",
-        "place": "Sala de prensa, Barcelona",
-        "description": "Presentación de resultados y conclusiones de los encuentros anteriores.",
-        "links": []
       }
     ]
   },

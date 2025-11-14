@@ -31,15 +31,15 @@
 					{#if $t(`trobades.events.${idx}.description`)}
 						<p>{$t(`trobades.events.${idx}.description`)}</p>
 					{/if}
-					<!-- {#if event.links && event.links.length > 0}
+					{#if $t(`trobades.events.${idx}.links`) }
 						<div class="trobada-links">
-							{#each event.links as link}
-								<a href={link.url} class="trobada-link" target="_blank" rel="noopener noreferrer">
-									{link.label}
+							{#each $t(`trobades.events.${idx}.links`) as _, jdx}
+								<a href={$t(`trobades.events.${idx}.links.${jdx}.url`)} class="trobada-link" target="_blank" rel="noopener noreferrer">
+									{$t(`trobades.events.${idx}.links.${jdx}.label`)}
 								</a>
 							{/each}
 						</div>
-					{/if} -->
+					{/if}
 				</div>
 			{/each}
 		</div>
