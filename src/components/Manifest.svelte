@@ -28,9 +28,8 @@
 
 <section id="manifest" class="content-section">
 	<div class="container">
-		<span style="display: none;">{$language}</span>
 		<h2>{$t('manifest.section_title')}</h2>
-		<h3>{$t('manifest.title')}</h3>
+		<!-- <h3>{$t('manifest.title')}</h3>s -->
 		<div class="rich-text">
 			{#if loading}
 				<p>{$t('manifest.loading')}</p>

@@ -2,12 +2,13 @@
   "nav": {
     "home": "Inicio",
     "manifest": "Manifiesto",
+    "trobades": "Encuentros",
     "roadmap": "Hoja de ruta",
     "adhesion": "Adhesiones"
   },
   "hero": {
     "title": "La instrumental",
-    "subtitle": "para imaginar futuros mas libres y colectivos para la música; para defender la dignidad y el compromiso de nuestras profesiones."
+    "subtitle": "Para imaginar futuros mas libres y colectivos para la música; para defender la dignidad y el compromiso de nuestras profesiones."
   },
   "manifest": {
     "section_title": "Manifiesto",
@@ -43,6 +44,54 @@
       {
         "title": "Diálogo y comunidad",
         "description": "Queremos espacios de encuentro entre artistas, público, técnicas y sellos para pensar colectivamente el futuro de la música y la cultura digital."
+      }
+    ]
+  },
+  "trobades": {
+    "section_title": "Encuentros",
+    "title": "Próximos encuentros e historia",
+    "description": "Aquí encontraras información sobre los debates abiertos que tenemos previstos y el histórico de encuentros anteriores.",
+    "day_label": "Fecha",
+    "hour_label": "Hora",
+    "place_label": "Lugar",
+    "events": [
+      {
+        "title": "Encuentro de apertura",
+        "day": "15 de noviembre de 2025",
+        "hour": "19:00 h",
+        "place": "Centro Cultural La Caldera, Barcelona",
+        "description": "Primer encuentro de La Instrumental para presentar el manifiesto y abrir el debate sobre el futuro de la música colectiva.",
+        "links": [
+          {
+            "label": "Más información",
+            "url": "https://example.com/encuentro1"
+          },
+          {
+            "label": "Registro",
+            "url": "https://example.com/register1"
+          }
+        ]
+      },
+      {
+        "title": "Debate sobre soberanía digital",
+        "day": "29 de noviembre de 2025",
+        "hour": "18:30 h",
+        "place": "Espacio Cooperativo, Barcelona",
+        "description": "Debate abierto sobre las herramientas y plataformas para la distribución de música independiente.",
+        "links": [
+          {
+            "label": "Más información",
+            "url": "https://example.com/encuentro2"
+          }
+        ]
+      },
+      {
+        "title": "Rueda de prensa",
+        "day": "13 de diciembre de 2025",
+        "hour": "17:00 h",
+        "place": "Sala de prensa, Barcelona",
+        "description": "Presentación de resultados y conclusiones de los encuentros anteriores.",
+        "links": []
       }
     ]
   },

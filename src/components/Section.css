@@ -1,11 +1,7 @@
 .content-section {
-  padding: 4rem 0;
-  border-top: 3px solid #1a1a1a;
+  background-color: #c3462f;
+  padding: 1rem 0;
   margin: 0;
-}
-
-.content-section {
-  padding: 4rem 0;
 }
 
 .content-section h2 {
@@ -83,10 +79,11 @@
   font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   display: block;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.75rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
   font-weight: 800;
+  line-height: 1.2;
 }
 
 .principle-item p {
@@ -103,6 +100,86 @@
   }
   
   .principle-item {
+    padding: 1.25rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.trobades-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.trobada-item {
+  border-left: 4px solid #cccccc;
+  padding-left: 1.75rem;
+  padding: 1.5rem;
+  padding-left: 1.75rem;
+  background-color: rgba(245, 245, 245, 0.6);
+  transition: background-color 0.2s ease-out;
+}
+
+.trobada-item:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.trobada-item h4 {
+  font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  display: block;
+  font-size: 3rem;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+.trobada-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+}
+
+.trobada-meta p {
+  margin: 0.25rem 0;
+}
+
+.trobada-item p {
+  margin: 0.75rem 0;
+  line-height: 1.75;
+  color: #333;
+}
+
+.trobada-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.trobada-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-out;
+}
+
+.trobada-link:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .trobades-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .trobada-item {
     padding: 1.25rem;
     padding-left: 1.5rem;
   }
@@ -144,12 +221,46 @@
   }
   
   .principle-item strong {
-    font-size: 0.85rem;
+    font-size: 2rem;
     margin-bottom: 0.4rem;
   }
 
   .principle-item p {
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+
+  .trobades-list {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .trobada-item {
+    padding: 1rem;
+    padding-left: 1.25rem;
+    border-left-width: 3px;
+  }
+
+  .trobada-item h4 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .trobada-meta {
+    font-size: 0.85rem;
+  }
+
+  .trobada-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .trobada-links {
+    gap: 0.5rem;
+  }
+
+  .trobada-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
   }
 }

@@ -2,12 +2,13 @@
   "nav": {
     "home": "Inici",
     "manifest": "Manifest",
+    "trobades": "Trobades",
     "roadmap": "Full de ruta",
     "adhesion": "Adhesions"
   },
   "hero": {
     "title": "La instrumental",
-    "subtitle": "per imaginar futurs més lliures i col·lectius per la música; per defensar la dignitat i el compromís de les nostres professions."
+    "subtitle": "Per imaginar futurs més lliures i col·lectius per la música; per defensar la dignitat i el compromís de les nostres professions."
   },
   "manifest": {
     "section_title": "Manifest",
@@ -45,6 +46,54 @@
       "description": "Volem espais de trobada entre artistes, públic, tècniques i segells per pensar col·lectivament el futur de la música i la cultura digital."
     }
   ]
+  },
+  "trobades": {
+    "section_title": "Trobades",
+    "title": "Pròximes trobades i històric",
+    "description": "Aquí trobaràs informació sobre els debats oberts que tenim previstos i l'històric de trobades anteriors.",
+    "day_label": "Data",
+    "hour_label": "Hora",
+    "place_label": "Lloc",
+    "events": [
+      {
+        "title": "Comunitzar la música",
+        "day": "29 de novembre de 2025",
+        "hour": "16:00 h",
+        "place": "Centre Cultural La Caldera, Barcelona",
+        "description": "Primera trobada de La Instrumental per a presentar el manifest i obrir el debat sobre el futur de la música col·lectiva.",
+        "links": [
+          {
+            "label": "Més informació",
+            "url": "https://example.com/trobada1"
+          },
+          {
+            "label": "Registre",
+            "url": "https://example.com/register1"
+          }
+        ]
+      },
+      {
+        "title": "Debat sobre sobirania digital",
+        "day": "29 de novembre de 2025",
+        "hour": "18:30 h",
+        "place": "Espai Cooperatiu, Barcelona",
+        "description": "Debat obert sobre les eines i plataformes per a la distribució d'música independents.",
+        "links": [
+          {
+            "label": "Més informació",
+            "url": "https://example.com/trobada2"
+          }
+        ]
+      },
+      {
+        "title": "Roda de premsa",
+        "day": "13 de desembre de 2025",
+        "hour": "17:00 h",
+        "place": "Sala de premsa, Barcelona",
+        "description": "Presentació de resultats i conclusions de les trobades anteriors.",
+        "links": []
+      }
+    ]
   },
   "roadmap": {
     "section_title": "Full de ruta",

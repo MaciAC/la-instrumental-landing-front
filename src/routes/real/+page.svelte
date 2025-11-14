@@ -2,6 +2,7 @@
 	import Header from '../../components/Header.svelte';
 	import Hero from '../../components/Hero.svelte';
 	import Manifest from '../../components/Manifest.svelte';
+	import Trobades from '../../components/Trobades.svelte';
 	// import Roadmap from '../../components/Roadmap.svelte';
 	import AdhesionForm from '../../components/AdhesionForm.svelte';
 	import Footer from '../../components/Footer.svelte';
@@ -12,6 +13,7 @@
 	<main>
 		<Hero />
 		<Manifest />
+		<Trobades />
 		<!-- <Roadmap /> -->
 		<AdhesionForm />
 	</main>

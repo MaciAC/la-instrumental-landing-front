@@ -54,7 +54,7 @@
 		<h2>{$t('adhesion.section_title')}</h2>
 		<div class="form-wrapper">
 			<form on:submit={handleSubmit} class="adhesion-form">
-				<h3 class="form-title">{$t('adhesion.form_title')}</h3>
+				<!-- <h3 class="form-title">{$t('adhesion.form_title')}</h3> -->
 
 				{#if success}
 					<div class="form-success">
