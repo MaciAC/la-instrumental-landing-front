@@ -10,32 +10,30 @@
 	<div class="container">
 		<span style="display: none;">{$language}</span>
 		<h2>{$t('trobades.section_title')}</h2>
-		<!-- <h3>{$t('trobades.title')}</h3> -->
-		<!-- <p class="rich-text">{$t('trobades.description')}</p> -->
 
 		<div class="trobades-list">
-			{#each events as _, idx}
+			{#each events as event, idx}
 				<div class="trobada-item">
-					<h4>{$t(`trobades.events.${idx}.title`)}</h4>
+					<h4>{event.title}</h4>
 					<div class="trobada-meta">
 						<p>
-							<strong>{$t(`trobades.day_label`)}:</strong> {$t(`trobades.events.${idx}.day`)}
+							<strong>{$t('trobades.day_label')}:</strong> {event.day}
 						</p>
 						<p>
-							<strong>{$t(`trobades.hour_label`)}:</strong> {$t(`trobades.events.${idx}.hour`)}
+							<strong>{$t('trobades.hour_label')}:</strong> {event.hour}
 						</p>
 						<p>
-							<strong>{$t(`trobades.place_label`)}:</strong> {$t(`trobades.events.${idx}.place`)}
+							<strong>{$t('trobades.place_label')}:</strong> {event.place}
 						</p>
 					</div>
-					{#if $t(`trobades.events.${idx}.description`)}
-						<p>{$t(`trobades.events.${idx}.description`)}</p>
+					{#if event.description}
+						<p>{event.description}</p>
 					{/if}
-					{#if $t(`trobades.events.${idx}.links`) }
+					{#if event.links && event.links.length}
 						<div class="trobada-links">
-							{#each $t(`trobades.events.${idx}.links`) as _, jdx}
-								<a href={$t(`trobades.events.${idx}.links.${jdx}.url`)} class="trobada-link" target="_blank" rel="noopener noreferrer">
-									{$t(`trobades.events.${idx}.links.${jdx}.label`)}
+							{#each event.links as link}
+								<a href={link.url} class="trobada-link" target="_blank" rel="noopener noreferrer">
+									{link.label}
 								</a>
 							{/each}
 						</div>
