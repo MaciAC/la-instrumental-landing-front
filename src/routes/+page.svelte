@@ -1,22 +1,23 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-
-	const handleAccessRealPage = () => {
-		goto('/real');
-	};
+	import Header from '../components/Header.svelte';
+	import Hero from '../components/Hero.svelte';
+	import Manifest from '../components/Manifest.svelte';
+	import Trobades from '../components/Trobades.svelte';
+	// import Roadmap from '../../components/Roadmap.svelte';
+	import AdhesionForm from '../components/AdhesionForm.svelte';
+	import Footer from '../components/Footer.svelte';
 </script>
 
 <div class="app">
+	<Header />
 	<main>
-		<div class="coming-soon">
-			<h1>Pròximament...</h1>
-			<p> </p>
-			<img src="/images/logo.png" alt="Logo" height="150" />
-		</div>
+		<Hero />
+		<Manifest />
+		<Trobades />
+		<!-- <Roadmap /> -->
+		<AdhesionForm />
 	</main>
-	<button class="hidden-button" on:click={handleAccessRealPage} title="Navigate to real page">
-		→
-	</button>
+	<Footer />
 </div>
 
 <style>
@@ -33,45 +34,5 @@
 
 	main {
 		flex: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.coming-soon {
-		text-align: center;
-		font-family: 'Inter', sans-serif;
-	}
-
-	.coming-soon h1 {
-		font-size: 3rem;
-		margin: 0;
-		color: #333;
-	}
-
-	.coming-soon p {
-		font-size: 2rem;
-		color: #666;
-		margin-top: 1rem;
-	}
-
-	.hidden-button {
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		width: 20px;
-		height: 20px;
-		padding: 0;
-		border: none;
-		background: transparent;
-		color: transparent;
-		cursor: pointer;
-		font-size: 12px;
-		opacity: 0.1;
-		transition: opacity 0.2s;
-	}
-
-	.hidden-button:hover {
-		opacity: 0.3;
 	}
 </style>

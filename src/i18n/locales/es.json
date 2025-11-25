@@ -8,7 +8,13 @@
   },
   "hero": {
     "title": "La instrumental",
-    "subtitle": "Para imaginar futuros mas libres y colectivos para la música; para defender la dignidad y el compromiso de nuestras profesiones."
+    "subtitle": "Para imaginar futuros más libres y colectivos para la música. Por una producción y consumo musical",
+    "rotatingWords": [
+      "responsables",
+      "críticos",
+      "conscientes",
+      "sostenibles"
+    ]
   },
   "manifest": {
     "section_title": "Manifiesto",
