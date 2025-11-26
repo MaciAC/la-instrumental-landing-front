@@ -3,7 +3,12 @@
 	import i18nInstance from '../i18n/config';
 	import './Section.css';
 
-	$: events = (i18nInstance.t('trobades.events', { returnObjects: true }) as any[]) || [];
+	let events: any[] = [];
+
+	$: {
+  		const lang = $language;
+  		events = (i18nInstance.t('trobades.events', { returnObjects: true }) as any[]) || [];
+	}
 </script>
 
 <section id="trobades" class="content-section">

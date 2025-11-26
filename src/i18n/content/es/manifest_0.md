@@ -1,0 +1,3 @@
+Recientemente veíamos con horror la noticia de que Daniel Ek, el CEO de Spotify, ha invertido cerca de 700 millones de euros en Helsing, una empresa armamentística alemana que fabrica tecnología militar equipada con inteligencia artificial.
+
+No es la primera vez que Spotify regala dinero a esta empresa: ya lo hizo en 2021, desatando una gran controversia entre artistas y usuarias de todo el planeta. Ahora, en medio de una operación masiva de rearme en Europa, y mientras continúa, pese a un alto el fuego no respetado, el genocidio en Palestina, la plataforma de _streaming_ musical más famosa del mundo proclama de nuevo —de forma poco sorprendente, pero no por ello menos indignante— su alineación con el imperialismo occidental y la violencia estructural.

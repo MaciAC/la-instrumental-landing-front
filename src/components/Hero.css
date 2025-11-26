@@ -15,10 +15,11 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .hero-title {
-  font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 10rem;
   line-height: 1.1;
   padding-bottom: 1.25rem;
@@ -30,14 +31,72 @@
 }
 
 .hero-subtitle {
-  font-family: 'Manuka Bold', 'Manuka', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  font-size: 5rem;
-  font-weight: 400;
+  font-family:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 3rem;
   letter-spacing: 0.02em;
   margin-bottom: 0;
-  line-height: 0.8;
-  color: #c3462f;
+  line-height: 1.2;
+  color: #d8d8d8;
   max-width: 100%;
+  text-align: center;
+}
+
+.title-part {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.title-part.align-left {
+  text-align: left;
+}
+
+.title-part.align-center {
+  text-align: center;
+}
+
+.title-part.align-right {
+  text-align: right;
+}
+
+.rotating-word {
+  display: inline-block;
+  min-width: 200px;
+  /* animation: fadeInOut 1.5s ease-in-out infinite; */
+  font-style: italic;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.hero-logo-top,
+.hero-logo-bottom {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-top img,
+.hero-logo-bottom img {
+  display: block;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -65,8 +124,29 @@
   }
 
   .hero-subtitle {
-    font-size: 5rem;
+    font-size: 3rem;
     max-width: 100%;
+  }
+  .rotating-word {
+  display: inline-block;
+  min-width: 200px;
+  /* animation: fadeInOut 1.5s ease-in-out infinite; */
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+}
+
+  .hero-logo-top,
+  .hero-logo-bottom {
+    display: flex;
+  }
+
+  .hero-logo-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-logo-bottom {
+    margin-top: 1.5rem;
   }
 }
 
@@ -89,7 +169,20 @@
   }
 
   .hero-subtitle {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     max-width: 100%;
+  }
+
+  .hero-logo-top,
+  .hero-logo-bottom {
+    display: flex;
+  }
+
+  .hero-logo-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-logo-bottom {
+    margin-top: 1.5rem;
   }
 }

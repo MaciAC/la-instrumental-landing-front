@@ -8,7 +8,16 @@
   },
   "hero": {
     "title": "La instrumental",
-    "subtitle": "Para imaginar futuros mas libres y colectivos para la música; para defender la dignidad y el compromiso de nuestras profesiones."
+    "subtitle": "Para imaginar futuros más libres y colectivos para la música. Por una producción y consumo musical",
+    "rotatingWords": [
+      "responsables",
+      "críticos",
+      "conscientes",
+      "sostenibles"
+    ]
+  },
+  "subhero": {
+    "text": "La Instrumental es un proceso abierto de organización y debate en torno a la música, impulsado por artistas, oyentes y hackers, con el objetivo de crear y compartir herramientas y recursos para la autogestión de nuestras comunidades."
   },
   "manifest": {
     "section_title": "Manifiesto",
@@ -106,7 +115,6 @@
   },
   "adhesion": {
     "section_title": "Adhesión al manifiesto",
-    "form_title": "Formulario de adhesión",
     "name": "Nombre",
     "first_name": "Nombre",
     "last_name": "Apellidos",
@@ -114,12 +122,15 @@
     "phone": "Teléfono",
     "organization": "Organización",
     "message": "Mensaje",
+    "comment": "Comentarios",
+    "comment_placeholder": "Nos puedes comentar lo que quieras...",
     "accept_terms": "Acepto los términos y condiciones",
     "submit": "Enviar",
     "submitting": "Enviando...",
     "success": "¡Gracias por tu adhesión!",
     "error": "Error enviando el formulario",
-    "required_fields": "Por favor, completa todos los campos requeridos"
+    "required_fields": "Por favor, completa todos los campos requeridos",
+    "receive_info": "Quiero recibir información sobre La Instrumental?"
   },
   "footer": {
     "text": "2025 La instrumental."

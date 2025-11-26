@@ -12,13 +12,18 @@ const apiClient = axios.create({
 export interface AdhesionFormData {
   name: string;
   email: string;
+  comment?: string;
+  receiveInfo: boolean;
 }
 
 export const submitAdhesion = async (formData: AdhesionFormData) => {
   try {
+    console.log(formData);
     const response = await apiClient.post('/v1/adhesions', {
       name: formData.name,
       email: formData.email,
+      comment: formData.comment,
+      receiveInfo: formData.receiveInfo,
     });
     return response.data.data;
   } catch (error: unknown) {

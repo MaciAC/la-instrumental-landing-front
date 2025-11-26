@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { t, language } from '../stores/i18n';
 	import i18nInstance from '../i18n/config';
-	import { loadMarkdownContent } from '../lib/markdownLoader';
+	import { loadManifestSections, type ManifestSection } from '../lib/markdownLoader';
 	import './Section.css';
+	import './Manifest.css';
 
-	let htmlContent = '';
+	let sections: ManifestSection[] = [];
 	let loading = true;
 	let error = false;
 
@@ -13,9 +14,9 @@
 	$: if ($language) {
 		loading = true;
 		error = false;
-		loadMarkdownContent($language, 'manifest')
-			.then((html) => {
-				htmlContent = html;
+		loadManifestSections($language)
+			.then((loadedSections) => {
+				sections = loadedSections;
 				loading = false;
 			})
 			.catch((err) => {
@@ -30,24 +31,32 @@
 	<div class="container">
 		<h2>{$t('manifest.section_title')}</h2>
 		<!-- <h3>{$t('manifest.title')}</h3>s -->
-		<div class="rich-text">
-			{#if loading}
+		{#if loading}
+			<div class="rich-text">
 				<p>{$t('manifest.loading')}</p>
-			{:else if error}
+			</div>
+		{:else if error}
+			<div class="rich-text">
 				<p>{$t('manifest.error')}</p>
-			{:else}
-				<div class="markdown-content">
-					{@html htmlContent}
+			</div>
+		{:else}
+			{#each sections as section (section.index)}
+				<div class="manifest-section manifest-section-{section.index}">
+					<div class="rich-text">
+						<div class="markdown-content">
+							{@html section.html}
+						</div>
+					</div>
 				</div>
-			{/if}
-		</div>
-		<div class="principles-list">
+			{/each}
+		{/if}
+		<!-- <div class="principles-list">
 			{#each principles as _, idx}
 				<div class="principle-item">
 					<strong>{$t(`manifest.principles.${idx}.title`)}</strong>
 					<p>{$t(`manifest.principles.${idx}.description`)}</p>
 				</div>
 			{/each}
-		</div>
+		</div> -->
 	</div>
 </section>

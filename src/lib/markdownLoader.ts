@@ -25,3 +25,46 @@ export async function loadMarkdownContent(locale: string, contentKey: string): P
   contentCache.set(cacheKey, contentPromise);
   return contentPromise;
 }
+
+export interface ManifestSection {
+  index: number;
+  html: string;
+}
+
+export async function loadManifestSections(locale: string): Promise<ManifestSection[]> {
+  const cacheKey = `${locale}/manifest_sections`;
+  
+  if (contentCache.has(cacheKey)) {
+    return contentCache.get(cacheKey)!;
+  }
+
+  const contentPromise = (async () => {
+    const sections: ManifestSection[] = [];
+    let sectionIndex = 0;
+
+    while (true) {
+      const modulePath = `../i18n/content/${locale}/manifest_${sectionIndex}.md`;
+      
+      if (!(modulePath in modules)) {
+        break;
+      }
+
+      const markdown = await modules[modulePath as keyof typeof modules]() as string;
+      const html = await marked(markdown);
+      sections.push({
+        index: sectionIndex,
+        html: html as string
+      });
+      sectionIndex++;
+    }
+
+    if (sections.length === 0) {
+      throw new Error(`No manifest sections found for locale: ${locale}`);
+    }
+
+    return sections;
+  })();
+
+  contentCache.set(cacheKey, contentPromise);
+  return contentPromise;
+}

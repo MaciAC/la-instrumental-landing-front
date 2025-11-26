@@ -1,0 +1,54 @@
+.subhero {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  margin: 0;
+  border-top: 3px solid #1a1a1a;
+}
+
+.subhero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.subhero-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #1a1a1a;
+  text-align: center;
+  max-width: 900px;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .subhero {
+    padding: 2rem 0;
+  }
+
+  .subhero .container {
+    padding: 2rem 1.5rem;
+  }
+
+  .subhero-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .subhero {
+    padding: 1.5rem 0;
+  }
+
+  .subhero .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .subhero-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
