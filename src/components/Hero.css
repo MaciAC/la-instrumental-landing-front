@@ -69,6 +69,19 @@
   /* animation: fadeInOut 1.5s ease-in-out infinite; */
   font-style: italic;
   text-align: center;
+  font-size: 5rem;
+}
+
+.hero-logo-top,
+.hero-logo-bottom {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-top img,
+.hero-logo-bottom img {
+  display: block;
 }
 
 @keyframes fadeInOut {
@@ -114,6 +127,27 @@
     font-size: 3rem;
     max-width: 100%;
   }
+  .rotating-word {
+  display: inline-block;
+  min-width: 200px;
+  /* animation: fadeInOut 1.5s ease-in-out infinite; */
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+}
+
+  .hero-logo-top,
+  .hero-logo-bottom {
+    display: flex;
+  }
+
+  .hero-logo-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-logo-bottom {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -137,5 +171,18 @@
   .hero-subtitle {
     font-size: 1.5rem;
     max-width: 100%;
+  }
+
+  .hero-logo-top,
+  .hero-logo-bottom {
+    display: flex;
+  }
+
+  .hero-logo-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-logo-bottom {
+    margin-top: 1.5rem;
   }
 }

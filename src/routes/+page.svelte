@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '../components/Header.svelte';
 	import Hero from '../components/Hero.svelte';
+	import Subhero from '../components/Subhero.svelte';
 	import Manifest from '../components/Manifest.svelte';
 	import Trobades from '../components/Trobades.svelte';
 	// import Roadmap from '../../components/Roadmap.svelte';
@@ -12,8 +13,9 @@
 	<Header />
 	<main>
 		<Hero />
-		<Manifest />
+		<Subhero />
 		<Trobades />
+		<Manifest />
 		<!-- <Roadmap /> -->
 		<AdhesionForm />
 	</main>

@@ -16,6 +16,9 @@
       "sostenibles"
     ]
   },
+  "subhero": {
+    "text": "La Instrumental es un proceso abierto de organización y debate en torno a la música, impulsado por artistas, oyentes y hackers, con el objetivo de crear y compartir herramientas y recursos para la autogestión de nuestras comunidades."
+  },
   "manifest": {
     "section_title": "Manifiesto",
     "loading": "Cargando manifiesto...",

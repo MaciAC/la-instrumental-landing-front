@@ -16,16 +16,37 @@
       "sostenibles"
     ]
   },
+  "subhero": {
+    "text": "La Instrumental és un procés obert d'organització i debat al voltant de la música, impulsat per artistes, oients i hackers, amb l'objectiu de crear i compartir eines i recursos per l'autogestió de les nostres comunitats."
+  },
   "manifest": {
     "section_title": "Manifest",
     "loading": "Carregant manifest...",
     "error": "Error carregant el manifest",
     "title": "Manifest per a la música lliure i col·lectiva",
     "contentFile": "manifest",
+    "subsections": [
+      {
+        "title": "Introducció",
+        "content": "Recentment vèiem amb horror la notícia que Daniel Ek, el CEO de Spotify, ha invertit prop de 700 milions d'euros a Helsing, una empresa armamentística alemana que fabrica tecnologia militar equipada amb intel·ligència artificial. No és el primer cop que Spotify regala diners a aquesta empresa: ja ho va fer l'any 2021, esperonant una gran controvèrsia entre artistes i usuàries arreu del planeta. Ara, enmig d'una operació massiva de rearmament d'Europa, i mentre continua, malgrat un alto al foc no respectat, el genocidi a Palestina, la plataforma de streaming musical més famosa del món proclama de nou—de manera poc sorprenent, però no per això menys indignant—la seva alineació amb l'imperialisme occidental i la violència estructural."
+      },
+      {
+        "title": "Problema",
+        "content": "Aquests fets deplorables han desencadenat diverses accions i converses necessàries arreu del planeta. Artistes com Deerhoof, King Gizzard and the Lizard Wizard o Massive Attack, entre molts altres, anunciaven que retiraran la seva música de Spotify. D'altres urgien els seus seguidors a escoltar-los a altres plataformes, com Tidal o Deezer. Especialment arrel del silenci de Rosalía davant del genocidi a Gaza, cada cop s'exigeix més el posicionament i la presa de partit de personalitats influents, i perd força la hipòtesi de la \"neutralitat\" de l'art. Però pensem que no n'hi ha prou. No n'hi ha prou amb pronunciaments i accions individuals. Perquè per generar grans transformacions cal organització; perquè els genocidis i el colonialisme continuen; i perquè el cas de Spotify no és un cas aïllat, sinó una expressió més de la disfunció generalitzada d'un sistema malalt. Ja fa temps que moltes artistes patim les humiliants condicions de Spotify: retribucions miserables a canvi de xapotejar, alienades i atomitzades, a la piscina infinita del streaming. La plataforma ens promet audiència, però continua precaritzant-nos mentre es lucra a costa de la nostra música i en regala els beneficis a indústries de mort. No només això: permet la circulació de música generada amb IA, que ja acumula milions de seguidors, que irromp per saturar encara més un context desbordat. Música fantasma, produïda per màquines que mai alçaran la seva veu, que no lluitaran pels seus drets ni per aturar la deriva neofeixista del capitalisme de plataforma. Però Spotify és només un dels exponents destacats d'aquest model. La resta de plataformes convencionals de streaming, des de Tidal fins a Apple Music, repliquen estructures piramidals, lucratives per a les seves cúpules empresarials, que se sostenen gràcies a la baixa compensació econòmica a les artistes, i funcionen com a mines de dades de les usuàries i els catàlegs musicals per a la compravenda a tercers i l'entrenament d'algoritmes, sense cap traçabilitat ni transparència. Evidentment, la destinació de les seves inversions i el seu model de funcionament mai no seran qüestions sobre les que podrem decidir nosaltres, sinó que respondran a les ambicions dels seus accionistes i caps executius. En aquest paradigma neoliberal i eminentment digital, les artistes i altres creadores ens veiem convertides en perfils de xarxes socials, en marques que competeixen en un mercat cada cop més saturat per intentar sobreviure. Mentre el món s'esmicola al nostre voltant, competim les unes amb les altres per subvencions públiques o privades, per un premi, per un nínxol, per l'atenció esmunyedissa del públic o d'algun actor rellevant que ens ajudi a empényer la nostra carrera, o simplement a sostenir-la de manera menys precària. Forçades a centrar-nos en la nostra pròpia supervivència, ens manca temps per generar i sostenir xarxes de suport i solidaritat de classe, xarxes per respondre col·lectivament a la conjuntura social i política i produir canvis culturals profunds. Acceptem els termes i condicions d'un sistema que ens converteix en producte i ens obliga a invertir enormes quantitats d'energia material i psicològica en ser \"rendibles\". Ens esgotem, i el sentit del que fem s'esgota amb nosaltres. No hem vingut a jugar a aquest joc. Hem vingut a canviar-ne les regles."
+      },
+      {
+        "title": "Propostes",
+        "content": "Cal fer-ho juntes. La manera més efectiva de contraposar-se al model hegemònic és fer-ho col·lectivament. Les accions i els boicots individuals són valents i poden tenir un gran impacte, però no són suficients per generar transformacions profundes. Canalitzar i organitzar la ràbia és una tasca urgent, i ho és especialment en un gremi amb tan poca tradició associativa com el nostre. Cal mantenir un diàleg obert. Falten espais de debat, de construcció, d'organització i d'imaginació col·lectiva, no només entre artistes, sinó entre tota la comunitat que envolta i fa possibles les plataformes de streaming. Més enllà del boicot, calen plataformes amb models alternatius. Que no estiguin en venda, que no depenguin d'inversors ni dels interessos d'un grapat de dirigents adinerats. Cal imaginació radical. L'ecosistema digital de masses, dominat per les xarxes socials convencionals, reprodueix i encoratja de manera oportunista l'ètica del \"no\": denunciar allò que no està bé, assenyalar i jutjar públicament aquelles persones que ho fan. Naveguem mitjans que premien la reacció emocional immediata, però que no ajuden a cultivar l'atenció, la cura, la confiança i el temps necessaris per imaginar què és el que realment volem. Tenim algunes idees com a artistes, com a músics, i també com a receptores de cultura. Imaginem alternatives no capitalistes a les plataformes de streaming: plataformes horitzontals, cooperatives, federades, que retribueixin justament a les artistes."
+      },
+      {
+        "title": "Conclusió",
+        "content": "Davant de la realitat violenta en què vivim i les inquietuds que sentim, fem una crida a trobar-nos, debatre i construir. Et convidem a una trobada d'artistes i altres treballadores culturals sensibilitzades per plantejar debats que considerem urgents pel nostre sector. Volem generar un espai per pensar i construir alternatives a Spotify i altres plataformes de streaming convencionals. Volem compartir malestars i idees front la precarietat, l'atomització i la dependència del capitalisme de plataforma. Volem donar a conèixer projectes i iniciatives valentes i necessàries que lluiten per construir un model més descentralitzat, cooperatiu, de base i amb valors. Sabem bé que les bombes que avui cauen sobre Gaza són bombes que pesen sobre nosaltres i sobre tota la humanitat. La nostra professió ha tingut i té una potència indiscutible per alçar la veu davant de la injustícia i per teixir nous imaginaris culturals. Fem-la servir."
+      }
+    ],
     "principles": [
     {
       "title": "Col·lectivitat",
-      "description": "Creiem en la força de l’organització conjunta per transformar el sistema musical. Les accions individuals no són suficients; cal cooperar i construir plegades."
+      "description": "Creiem en la força de l'organització conjunta per transformar el sistema musical. Les accions individuals no són suficients; cal cooperar i construir plegades."
     },
     {
       "title": "Justícia i anticapitalisme",
@@ -45,7 +66,7 @@
     },
     {
       "title": "Solidaritat i compromís social",
-      "description": "La música és una eina per denunciar la injustícia i construir nous imaginaris culturals. Ens posicionem contra els genocidis i tota forma d’opressió."
+      "description": "La música és una eina per denunciar la injustícia i construir nous imaginaris culturals. Ens posicionem contra els genocidis i tota forma d'opressió."
     },
     {
       "title": "Diàleg i comunitat",

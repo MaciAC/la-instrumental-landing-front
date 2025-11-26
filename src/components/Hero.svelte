@@ -57,6 +57,9 @@
 
 <section class="hero">
 	<div class="container">
+		<div class="hero-logo-top mobile-only">
+			<img src="/images/logo-blanc.png" alt="Logo" height="90" />
+		</div>
 		<div class="hero-subtitle">
 			<p class="title-part">
 				{#each subtitleParts as part}
@@ -69,6 +72,9 @@
 				<br />
 				<span class="rotating-word">{rotatingWords[currentWordIndex]}</span>
 			</p>
+		</div>
+		<div class="hero-logo-bottom mobile-only">
+			<img src="/images/logo-blanc.png" alt="Logo" height="70" />
 		</div>
 		<span style="display: none;">{$language}</span>
 	</div>
