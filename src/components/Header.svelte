@@ -41,8 +41,8 @@
 
 			<div class="header-desktop">
 				<nav class="nav">
-					<a href="#manifest">{$t('nav.manifest')}</a>
 					<a href="#trobades">{$t('nav.trobades')}</a>
+					<a href="#manifest">{$t('nav.manifest')}</a>
 					<!-- <a href="#roadmap">{$t('nav.roadmap')}</a> -->
 					<a href="#manifest-adhesion">{$t('nav.adhesion')}</a>
 				</nav>
@@ -83,8 +83,8 @@
 
 	{#if isMenuOpen}
 		<nav class="mobile-menu">
-			<a href="#manifest" on:click={closeMenu}>{$t('nav.manifest')}</a>
 			<a href="#trobades" on:click={closeMenu}>{$t('nav.trobades')}</a>
+			<a href="#manifest" on:click={closeMenu}>{$t('nav.manifest')}</a>
 			<!-- <a href="#roadmap" on:click={closeMenu}>{$t('nav.roadmap')}</a> -->
 			<a href="#manifest-adhesion" on:click={closeMenu}>{$t('nav.adhesion')}</a>
 			<div class="mobile-lang-selector">

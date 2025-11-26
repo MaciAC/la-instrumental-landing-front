@@ -115,7 +115,6 @@
   },
   "adhesion": {
     "section_title": "Adhesión al manifiesto",
-    "form_title": "Formulario de adhesión",
     "name": "Nombre",
     "first_name": "Nombre",
     "last_name": "Apellidos",
@@ -123,12 +122,15 @@
     "phone": "Teléfono",
     "organization": "Organización",
     "message": "Mensaje",
+    "comment": "Comentarios",
+    "comment_placeholder": "Nos puedes comentar lo que quieras...",
     "accept_terms": "Acepto los términos y condiciones",
     "submit": "Enviar",
     "submitting": "Enviando...",
     "success": "¡Gracias por tu adhesión!",
     "error": "Error enviando el formulario",
-    "required_fields": "Por favor, completa todos los campos requeridos"
+    "required_fields": "Por favor, completa todos los campos requeridos",
+    "receive_info": "Quiero recibir información sobre La Instrumental?"
   },
   "footer": {
     "text": "2025 La instrumental."

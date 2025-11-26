@@ -8,6 +8,8 @@
 	let formData: AdhesionFormData = {
 		name: '',
 		email: '',
+		comment: '',
+		receiveInfo: false,
 	};
 	let loading = false;
 	let success = false;
@@ -16,7 +18,7 @@
 	const handleChange = (e: Event) => {
 		const target = e.target as HTMLInputElement;
 		const field = target.name as keyof AdhesionFormData;
-		formData = { ...formData, [field]: target.value };
+		formData = { ...formData, [field]: target.type === 'checkbox' ? target.checked : target.value };
 	};
 
 	const handleSubmit = async (e: Event) => {
@@ -36,6 +38,8 @@
 			formData = {
 				name: '',
 				email: '',
+				comment: '',
+				receiveInfo: false,
 			};
 			setTimeout(() => {
 				success = false;
@@ -54,8 +58,6 @@
 		<h2>{$t('adhesion.section_title')}</h2>
 		<div class="form-wrapper">
 			<form on:submit={handleSubmit} class="adhesion-form">
-				<!-- <h3 class="form-title">{$t('adhesion.form_title')}</h3> -->
-
 				{#if success}
 					<div class="form-success">
 						{$t('adhesion.success')}
@@ -94,6 +96,29 @@
 					/>
 				</div>
 
+				<div class="form-group">
+					<label for="comment">{$t('adhesion.comment')}</label>
+					<textarea
+						id="comment"
+						name="comment"
+						value={formData.comment}
+						on:change={handleChange}
+						on:input={handleChange}
+						maxlength="1000"
+						placeholder={$t('adhesion.comment_placeholder')}
+					></textarea>
+					<small>{formData.comment?.length ?? 0} / 1000</small>
+				</div>
+				<div class="form-group checkbox">
+					<input
+						type="checkbox"
+						id="receiveInfo"
+						name="receiveInfo"
+						checked={formData.receiveInfo}
+						on:change={handleChange}
+					/>
+					<label for="receiveInfo">{$t('adhesion.receive_info')}</label>
+				</div>
 				<button type="submit" disabled={loading}>
 					{loading ? $t('adhesion.submitting') : $t('adhesion.submit')}
 				</button>

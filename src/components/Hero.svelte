@@ -73,9 +73,9 @@
 				<span class="rotating-word">{rotatingWords[currentWordIndex]}</span>
 			</p>
 		</div>
-		<div class="hero-logo-bottom mobile-only">
+		<!-- <div class="hero-logo-bottom mobile-only">
 			<img src="/images/logo-blanc.png" alt="Logo" height="70" />
-		</div>
+		</div> -->
 		<span style="display: none;">{$language}</span>
 	</div>
 </section>
