@@ -76,8 +76,14 @@
   margin-top: 0.35rem;
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
   cursor: pointer;
   flex-shrink: 0;
+  flex-grow: 0;
+  align-self: flex-start;
   accent-color: #1a1a1a;
   appearance: none;
   -webkit-appearance: none;
