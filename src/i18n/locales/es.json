@@ -20,7 +20,7 @@
     "text": "La Instrumental es un proceso abierto de organización y debate en torno a la música, impulsado por artistas, oyentes y hackers, con el objetivo de crear y compartir herramientas y recursos para la autogestión de nuestras comunidades."
   },
   "manifest": {
-    "section_title": "Protomanifiesto",
+    "section_title": "Manifiesto v0",
     "loading": "Cargando manifiesto...",
     "error": "Error cargando el manifiesto",
     "title": "Manifiesto para la música libre y colectiva",
