@@ -29,7 +29,9 @@
 
 <section id="manifest" class="content-section">
 	<div class="container">
-		<h2>{$t('manifest.section_title')}</h2>
+		<element class="manifest-title">
+			<h2>{$t('manifest.section_title')}</h2>
+		</element>
 		<!-- <h3>{$t('manifest.title')}</h3>s -->
 		{#if loading}
 			<div class="rich-text">
