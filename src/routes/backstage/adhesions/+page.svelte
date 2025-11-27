@@ -10,6 +10,9 @@
 	let pageSize = 10;
 	let loading = true;
 	let error = '';
+	let totalUniqueEmails = 0;
+	let totalUniqueEmailsWithNewsletter = 0;
+	let totalSubmissions = 0;
 
 	onMount(async () => {
 		const savedCredentials = localStorage.getItem('adminCredentials');
@@ -29,6 +32,7 @@
 			loading = true;
 			error = '';
 			adhesions = await getAdhesions(credentials, currentPage, pageSize);
+			await calculateStats();
 		} catch (err) {
 			error = 'Failed to fetch adhesions. Please check your password.';
 			if ((err as any).response?.status === 401) {
@@ -37,6 +41,28 @@
 			}
 		} finally {
 			loading = false;
+		}
+	}
+
+	async function calculateStats() {
+		if (!credentials) return;
+
+		try {
+			const allAdhesions = await getAdhesions(credentials, 1, 10000);
+			const uniqueEmails = new Set<string>();
+			const uniqueEmailsWithNewsletter = new Set<string>();
+
+			allAdhesions.data.forEach((adhesion) => {
+				uniqueEmails.add(adhesion.email);
+				if (adhesion.newsletter) {
+					uniqueEmailsWithNewsletter.add(adhesion.email);
+				}
+			});
+			totalSubmissions = allAdhesions.data.length;
+			totalUniqueEmails = uniqueEmails.size;
+			totalUniqueEmailsWithNewsletter = uniqueEmailsWithNewsletter.size;
+		} catch (err) {
+			console.error('Failed to calculate stats:', err);
 		}
 	}
 
@@ -98,7 +124,7 @@
 
 <div class="admin-page">
 	<div class="admin-header">
-		<h1>Adhesions Management</h1>
+		<h1>backstage - Adhesions</h1>
 		<button class="logout-btn" on:click={logout}>Logout</button>
 	</div>
 
@@ -109,37 +135,50 @@
 
 		{#if !loading && adhesions}
 			<div class="actions-bar">
-				<button class="download-btn" on:click={downloadAllAdhesionsCSV}>Download All as CSV</button>
+				<button class="download-btn" on:click={downloadAllAdhesionsCSV}>⬇️ .CSV</button>
+			</div>
+
+			<div class="stats-section">
+				<div class="stat-card">
+					<div class="stat-label">Total entregues</div>
+					<div class="stat-value">{totalSubmissions}</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-label">Total Emails únics</div>
+					<div class="stat-value">{totalUniqueEmails}</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-label">Total Emails únics newsletter ✅</div>
+					<div class="stat-value">{totalUniqueEmailsWithNewsletter}</div>
+				</div>
 			</div>
 		{/if}
 
 		{#if loading}
-			<p>Loading adhesions...</p>
+			<p>Carregant adhesions...</p>
 		{:else if adhesions && adhesions.data.length > 0}
 			<div class="table-wrapper">
 				<table>
 					<thead>
 						<tr>
-							<th>ID</th>
-							<th>Name</th>
+							<th>Nom</th>
 							<th>Email</th>
-							<th>Comment</th>
-							<th>Newsletter</th>
-							<th>Submitted</th>
+							<th>Comentari</th>
+							<th>Newsletter?</th>
+							<th>Dia i hora</th>
 						</tr>
 					</thead>
 					<tbody>
 						{#each adhesions.data as adhesion (adhesion.id)}
 							<tr>
-								<td>{adhesion.id}</td>
 								<td>{adhesion.name}</td>
 								<td>{adhesion.email}</td>
 								<td class="comment">{adhesion.comment || '-'}</td>
 								<td class="center">
 									{#if adhesion.newsletter}
-										<span class="badge-yes">Yes</span>
+										<span>✅</span>
 									{:else}
-										<span class="badge-no">No</span>
+										<span>❌</span>
 									{/if}
 								</td>
 								<td>{formatDate(adhesion.created_at)}</td>
@@ -155,38 +194,37 @@
 						disabled={currentPage === 1}
 						on:click={() => goToPage(1)}
 					>
-						First
+						1a pag
 					</button>
 
 					<button
 						disabled={currentPage === 1}
 						on:click={() => goToPage(currentPage - 1)}
 					>
-						Previous
+						Anterior
 					</button>
 
 					<div class="page-info">
-						Page {adhesions.pagination.page} of {adhesions.pagination.totalPages}
-						({adhesions.pagination.total} total)
+						Pàgina {adhesions.pagination.page} de {adhesions.pagination.totalPages}
 					</div>
 
 					<button
 						disabled={currentPage === adhesions.pagination.totalPages}
 						on:click={() => goToPage(currentPage + 1)}
 					>
-						Next
+						Següent
 					</button>
 
 					<button
 						disabled={!adhesions || currentPage === adhesions.pagination.totalPages}
 						on:click={() => adhesions && goToPage(adhesions.pagination.totalPages)}
 					>
-						Last
+						Última
 					</button>
 				</div>
 			{/if}
 		{:else}
-			<p>No adhesions found</p>
+			<p>No nhi ha</p>
 		{/if}
 	</main>
 </div>
@@ -262,6 +300,39 @@
 		border-color: #a83621;
 	}
 
+	.stats-section {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.stat-card {
+		border: 2px solid #1a1a1a;
+		padding: 1.5rem;
+		background-color: #f5f5f5;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.stat-label {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		color: #1a1a1a;
+		margin-bottom: 0.5rem;
+		text-align: center;
+	}
+
+	.stat-value {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #c3462f;
+	}
+
 	.table-wrapper {
 		border: 2px solid #1a1a1a;
 		margin-bottom: 2rem;
@@ -321,27 +392,6 @@
 		text-align: center;
 	}
 
-	.badge-yes,
-	.badge-no {
-		display: inline-block;
-		padding: 0.35rem 0.75rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		font-size: 0.8rem;
-		letter-spacing: 0.05em;
-		border: 2px solid #1a1a1a;
-	}
-
-	.badge-yes {
-		background-color: #fafafa;
-		color: #1a1a1a;
-	}
-
-	.badge-no {
-		background-color: #1a1a1a;
-		color: #fafafa;
-	}
-
 	.pagination {
 		display: flex;
 		justify-content: center;
@@ -384,6 +434,14 @@
 		}
 
 		.admin-header h1 {
+			font-size: 2rem;
+		}
+
+		.stats-section {
+			grid-template-columns: 1fr;
+		}
+
+		.stat-value {
 			font-size: 2rem;
 		}
 
