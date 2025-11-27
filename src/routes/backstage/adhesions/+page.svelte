@@ -309,7 +309,7 @@
 
 	.stat-card {
 		border: 2px solid #1a1a1a;
-		padding: 1.5rem;
+		padding: 0.5rem;
 		background-color: #f5f5f5;
 		display: flex;
 		flex-direction: column;
@@ -328,7 +328,7 @@
 	}
 
 	.stat-value {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		color: #c3462f;
 	}
