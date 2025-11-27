@@ -37,24 +37,38 @@
 
 <div class="admin-page">
 	<div class="container">
-		<h1>Admin Access</h1>
+		<h1>Accés backstage</h1>
 		<form on:submit={handleLogin} class="form-wrapper">
 			<div class="form-group">
-				<label for="password">Password</label>
+				<label for="password">Contrasenya</label>
 				<input
 					id="password"
 					type="password"
 					bind:value={password}
-					placeholder="Enter admin password"
 					disabled={loading}
 				/>
 			</div>
 			{#if error}
 				<div class="form-error">{error}</div>
 			{/if}
-			<button type="submit" disabled={loading}>
+			<button type="submit" class="login-btn" disabled={loading}>
 				{loading ? 'Authenticating...' : 'Login'}
 			</button>
 		</form>
 	</div>
 </div>
+
+<style>
+	.login-btn {
+		background-color: #1a1a1a;
+		color: #fafafa;
+		border: 2px solid #1a1a1a;
+		padding: 0.75rem 1.5rem;
+		margin-top: 2rem;
+		cursor: pointer;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+	}
+</style>
