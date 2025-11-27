@@ -55,12 +55,12 @@ export const submitAdhesion = async (formData: AdhesionFormData) => {
   }
 };
 
-export const getAdhesions = async (token: string, page: number = 1, limit: number = 10): Promise<PaginatedAdhesions> => {
+export const getAdhesions = async (credentials: string, page: number = 1, limit: number = 10): Promise<PaginatedAdhesions> => {
   try {
     const response = await apiClient.get('/v1/adhesions', {
       params: { page, limit },
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Basic ${credentials}`,
       },
     });
     return response.data;
