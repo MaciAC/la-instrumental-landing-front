@@ -16,6 +16,25 @@ export interface AdhesionFormData {
   receiveInfo: boolean;
 }
 
+export interface Adhesion {
+  id: number;
+  name: string;
+  email: string;
+  comment: string | null;
+  newsletter: boolean;
+  created_at: string;
+}
+
+export interface PaginatedAdhesions {
+  data: Adhesion[];
+  pagination: {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+  };
+}
+
 export const submitAdhesion = async (formData: AdhesionFormData) => {
   try {
     console.log(formData);
@@ -32,6 +51,25 @@ export const submitAdhesion = async (formData: AdhesionFormData) => {
       throw error;
     }
     console.error('Error submitting adhesion:', error);
+    throw error;
+  }
+};
+
+export const getAdhesions = async (token: string, page: number = 1, limit: number = 10): Promise<PaginatedAdhesions> => {
+  try {
+    const response = await apiClient.get('/v1/adhesions', {
+      params: { page, limit },
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data;
+  } catch (error: unknown) {
+    if (axios.isAxiosError(error)) {
+      console.error('Error fetching adhesions:', error.response?.data ?? error.message);
+      throw error;
+    }
+    console.error('Error fetching adhesions:', error);
     throw error;
   }
 };
